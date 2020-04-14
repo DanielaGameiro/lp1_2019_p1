@@ -27,7 +27,8 @@ jogo e como se deve jogá-lo.
 A classe `Tabuleiro.cs` contém todos os elementos para estruturar o tabuleiro
 8x8 do jogo.
 
-A classe `Program.cs` contém as "instruções" do programa, renderiza tabuleiro e
+A classe `Program.cs` contém as "instruções" do programa, renderiza o tabuleiro
+e
 
 A classe `Sheep.cs`
 
