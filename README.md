@@ -1,24 +1,41 @@
-# Wolf and Sheep
+# Wolf and Sheep - Projeto 1
 
 Resolução do 1º Projeto de LP1 2019/2020, por Daniela Gameiro nº21901681,
 Francisco Costa nº21903228 e João Borges nº21904214.
 
+[Repositório *Git*](https://github.com/DanielaGameiro/lp1_2019_p1.git)
+
 ## Distribuição e Organização do Grupo
 
-**Daniela Gameiro:**
+A aluna **Daniela Gameiro** fez a classe `MenuInicial.cs` e a
+classe `Tabuleiro.cs`. Ajudou a estruturar a classe `Program.cs`.
+Também fez o documento `README.md` em *Markdown*.
 
-**Francisco Costa:**
+O aluno **Francisco Costa** fez
 
-**João Borges:**
-
-Repositório *Git* - https://github.com/DanielaGameiro/lp1_2019_p1.git
+O aluno **João Borges** fez
 
 ## Arquitetura da Solução
 
 ### Descrição e Estrutura do Programa
 
+O programa está dividido em X classes, cada uma com a sua função:
+
+A classe `MenuInicial.cs` apresenta em formato texto uma breve explicação do
+jogo e como se deve jogá-lo.
+
+A classe `Tabuleiro.cs` contém todos os elementos para estruturar o tabuleiro
+8x8 do jogo.
+
+A classe `Program.cs` apresenta as instruções e regras do programa,
+
 ### Fluxograma
 
+![Fluxograma](Fluxograma.png)
+
 ## Referências
+
+* Usámos o [Relatório](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao.git)
+em Markdown do Professor Nuno Fachada como referência para o nosso.
 
 * 
