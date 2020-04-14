@@ -3,7 +3,8 @@
 namespace WolfAndSheep
 {
     /// <summary>
-    /// Esta classe contém o método Menu e imprime as regras/instruções do jogo
+    /// Esta classe contém o método MenuInicial e imprime as 
+    /// regras e as instruções do jogo
     /// </summary>
     public class MenuInicial
     {
@@ -36,8 +37,7 @@ namespace WolfAndSheep
             " \n- Pode se mover para UM quadrado preto vazio por turno;\n\n");
 
             // Input do utilizador para iniciar o jogo
-            Console.WriteLine("Pressiona uma tecla + ENTER" +  
-            " para comecar a jogar!");
+            Console.WriteLine("Pressiona ENTER para comecar a jogar!");
             Console.Read();
         }
     }
