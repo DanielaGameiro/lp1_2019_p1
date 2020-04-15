@@ -30,7 +30,6 @@ namespace WolfAndSheep
             // Parte de cima do tabuleiro
             Console.WriteLine("__________________________________________\n" +
             "__________________________________________");
-            //Console.WriteLine("__________________________________________");
 
             // Loop da largura do tabuleiro
             for (int x = 0; x < tabuleiroNovo.X; x++)
