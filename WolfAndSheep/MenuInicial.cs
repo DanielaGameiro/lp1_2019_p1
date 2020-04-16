@@ -20,7 +20,7 @@ namespace WolfAndSheep
             " Este jogo e' jogado por turnos num tabuleiro 8x8.\n\n" + 
             "Ao iniciar o jogo, o jogador que controla as ovelhas vai" + 
             " escolher um lado do tabuleiro para as posicionar e em seguida" + 
-            " o outro jogador ira' escolher o lado oposto para" +
+            " o outro jogador ira' para o lado oposto" +
             " posicionar o seu lobo.\n\n" + "O objetivo das ovelhas e'" + 
             " bloquear o lobo entre as paredes ou entre elas mesmas," + 
             " deixando o lobo no meio, impedindo-o de se mover." + 
@@ -28,7 +28,7 @@ namespace WolfAndSheep
             " originais das ovelhas. Deste modo, quem for o primeiro a" + 
             " cumprir o seu objetivo ganha o jogo e o mesmo acaba!\n\n\n" + 
             " Movimentacao das OVELHAS:\n" + 
-            " \n- So' podem andar na diagonal e para a frente;" +
+            " \n- So' podem andar nas diagonais frontais;" +
             " \n- Pode mover UMA ovelha para UM quadrado preto vazio" + 
             " por turno.\n\n" + 
             " Movimentacao do LOBO:\n" +
