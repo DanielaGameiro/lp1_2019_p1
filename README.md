@@ -9,7 +9,7 @@ Francisco Costa nº21903228 e João Borges nº21904214.
 
 A aluna **Daniela Gameiro** fez a classe `MenuInicial.cs`, ajudou a fazer a
 classe `Tabuleiro.cs` e a estruturar a classe `Program.cs`.
-E também fez o documento `README.md` em *Markdown*.
+Também fez o documento `README.md` em *Markdown* e o respetivo fluxograma.
 
 O aluno **Francisco Costa** fez
 
@@ -40,7 +40,8 @@ A classe `Wolf.cs`
 
 ## Referências
 
-* Utilizámos o [Relatório](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao.git)
+* Utilizámos o [Relatório](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao/blob/master/README.md)
 em Markdown do Docente Nuno Fachada como referência para o nosso relatório.
 
-* 
+* Utilizámos o [Projeto](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao.git)
+do Docente Nuno Fachada como referência para a elaboração do nosso projeto.
