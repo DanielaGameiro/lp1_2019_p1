@@ -41,7 +41,7 @@ A classe `Wolf.cs`
 ## Referências
 
 * Utilizámos o [Relatório](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao/blob/master/README.md)
-em Markdown do Docente Nuno Fachada como referência para o nosso relatório.
+em *Markdown* do Docente Nuno Fachada como referência para o nosso relatório.
 
 * Utilizámos o [Projeto](https://github.com/VideojogosLusofona/lp1_2018_p2_solucao.git)
 do Docente Nuno Fachada como referência para a elaboração do nosso projeto.
