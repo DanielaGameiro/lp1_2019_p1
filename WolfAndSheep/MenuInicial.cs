@@ -3,7 +3,7 @@
 namespace WolfAndSheep
 {
     /// <summary>
-    /// Esta classe contém o método MenuInicial e imprime as 
+    /// Esta classe contém o método Menu e imprime as 
     /// regras e as instruções do jogo
     /// </summary>
     public class MenuInicial
