@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace WolfAndSheep
 {
@@ -28,10 +28,12 @@ namespace WolfAndSheep
             Console.WriteLine("Onde quer por as ovelhas?\n"
                 + "1 = cima , 2 = direita\n"
                 + "3 = baixo, 4 = esquerda");
-
+            ///Pede ao jogador a posição onde quer as ovelhas e espera input
+            /// válido
             while (!int.TryParse(Console.ReadLine(), out OvelhaDir) ||
                 OvelhaDir < 1 || OvelhaDir > 4);
 
+            ///Põe as ovelhas no tabuleiro
             Ovelhas[] ovelhas = PoeOvelhas(tabuleiroNovo, OvelhaDir);
 
             /// <summary>
@@ -55,26 +57,29 @@ namespace WolfAndSheep
                 if (ovelhas_Loose(OvelhaDir, player1)) break;
                 check = false;
 
+                ///Loop enquanto uma ovelha não for movida com sucesso
                 while(check == false)
                 {
+
                     Console.WriteLine("Player2");
                     Console.WriteLine("Que ovelha queres mexer?\n"
                     + "1 , 2 , 3 , 4");
 
+                    ///Espera o input da ovelha que o jogador que mover até
+                    /// válido
                     while (!int.TryParse(Console.ReadLine(), out escolhaO) ||
                     escolhaO < 1 || escolhaO > 4) ;
-
-                    Console.WriteLine(ovelhas[escolhaO-1].OvelhaX);
-                    Console.WriteLine(ovelhas[escolhaO-1].OvelhaY);
-                    Console.WriteLine(player1);
 
                     Console.WriteLine("Player2");
                     Console.WriteLine("Para onde queres mexer a ovelha?\n"
                      + "1 - Cima-esquerda  2 - Cima-Direita\n"
                      + "3 - Baixo-esquerda 4 - Baixo-Direira");
 
+                    ///Move a ovelha e diz-nos se foi sucedido ou não
                     check = ovelhas[escolhaO-1].OvelhaM(tabuleiroNovo, OvelhaDir
                     ,escolhaO-1);
+                    ///Se a ovelha não for movida com sucesso check vem como
+                    ///falso
                     if (check == false){
                         Console.WriteLine("Nao podes mexer a ovelha para ai");
                     }
@@ -93,23 +98,35 @@ namespace WolfAndSheep
             }
         }
 
+        /// <summary>
+        /// Põe as ovelhas no tabuleiro
+        /// </summary>
+        /// <param name="tabuleiroNovo">Board atual</param>
+        /// <param name="OvelhaDir">Posição onde as ovelhas começaram</param>
          private static Ovelhas[] PoeOvelhas(Tabuleiro tabuleiroNovo,
          int OvelhaDir){
 
             Ovelhas[] ovelhas = new Ovelhas[4];
-            
+
+            ///x = Altura do tabuleiro ou linha
             int x;
+            ///y = Largura do tabuleiro ou colunas
             int y;
+
+            ///Atribui um número a ovelha a ser criada
             int i = 0;
+
+            /// Dependendo da posição inicial das ovelhas cria as ovelahs na sua
+            /// posição correta
             if (OvelhaDir==1)
             {
                 x = 0;
                 for (y = 0 ; y < tabuleiroNovo.Y; y++)
                 {
-                  
+
                     if (tabuleiroNovo[x, y] == ' ')
                     {
-                    
+
                         ovelhas[i] = new Ovelhas(x, y);
 
                         i++;
@@ -138,13 +155,13 @@ namespace WolfAndSheep
                 {
                 if (tabuleiroNovo[x, y] == ' ')
                 {
-                    
+
                     ovelhas[i] = new Ovelhas(x, y);
 
                     i++;
                 }
              }
-                
+
              }
              else
              {
@@ -153,14 +170,14 @@ namespace WolfAndSheep
                 {
                     if (tabuleiroNovo[x, y] == ' ')
                     {
-                       
+
                         ovelhas[i] = new Ovelhas(x, y);
 
                         i++;
                     }
                 }
              }
-            ///Atualiza o visualmente o tabuleiro com
+            ///Atualiza visualmente o tabuleiro com
             ///o número de cada ovelha no tabuleiro
             tabuleiroNovo[ovelhas[0].OvelhaX, ovelhas[0].OvelhaY] = '1';
             tabuleiroNovo[ovelhas[1].OvelhaX, ovelhas[1].OvelhaY] = '2';
@@ -173,6 +190,14 @@ namespace WolfAndSheep
             return ovelhas;
         }
 
+        /// <summary>
+        /// Se o lobo chegar a uma das posições iniciais das ovelhas o jogador
+        /// que as controla perde
+        /// </summary>
+        /// <param name="OvelhaDir"></param>
+        /// <param name="player1">Objeto que representa o jogador que
+        /// controla o lobo e através do qual se obtém a sua posição</param>
+        /// <returns>Retorna True se o lobo vencer</returns>
          private static bool ovelhas_Loose(int OvelhaDir, Wolf player1)
         {
             int [] posição = player1.getPos();

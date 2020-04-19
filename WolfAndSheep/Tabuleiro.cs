@@ -31,19 +31,19 @@
         {
             tabuleiro = new char[DimX, DimY];
 
-            // Largura 
+            // Largura
             for (int x = 0; x < DimX; x++)
             {
                 // Altura
                 for (int y = 0; y < DimY; y++)
                 {
-                    // Verificar se a posição está num quadrado "não-jogável" 
+                    // Verificar se a posição está num quadrado "não-jogável"
                     if (((x + y) % 2) == 0)
                     {
                         // Se sim, meter um X nesse quadrado
                         tabuleiro[x, y] = 'X';
                     }
-                    
+
                     // Se a posição está num quadrado "jogável", deixar esse
                     // espaço vazio
                     else
