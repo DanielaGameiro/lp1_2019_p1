@@ -21,9 +21,19 @@ namespace WolfAndSheep
             Tabuleiro tabuleiroNovo = new Tabuleiro (8,8);
             Render(tabuleiroNovo);
 
+            /// <summary>
+            /// Cria o objeto da classe Wolf que vai representar o jogador que
+            /// controla o lobo e a sua situação
+            /// </summary>
             Wolf player1 = new Wolf();
+
+            /// Pede ao jogador a posição inicial em que deseja colocar o lobo
+            /// e se válida coloca-o. Faz uso da posição inicial das ovelhas
             player1.Start(OvelhaDir);
 
+            /// <summary>
+            /// Ciclo de jogo até que um jogador perca
+            /// </summary>
             while(!(player1.Loose() || player2.Loose()))
             {
                 player1.Move();
