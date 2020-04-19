@@ -13,7 +13,7 @@ Também fez o documento `README.md` em *Markdown* e o respetivo fluxograma.
 
 O aluno **Francisco Costa** fez
 
-O aluno **João Borges** fez
+O aluno **João Borges** fez a classe `Wolf.cs` e ajudou a estruturar a classe `Program.cs`.
 
 ## Arquitetura da Solução
 
@@ -32,7 +32,7 @@ o tabuleiro,
 
 A classe `Sheep.cs`
 
-A classe `Wolf.cs`
+A classe `Wolf.cs`engloba toda a movimentação do lobo e as suas condições de derrota.
 
 ### Fluxograma
 
