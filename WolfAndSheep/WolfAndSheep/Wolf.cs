@@ -12,7 +12,7 @@ namespace WolfAndSheep
         private int[] next_pos;
         private char[] separador;
         private string[]  snext;
-        bool inválida;
+        static bool inválida;
 
         /// <summary>
         /// Constructor que dá valor inicial
