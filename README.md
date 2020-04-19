@@ -30,7 +30,7 @@ A classe `Tabuleiro.cs` contém todos os elementos para estruturar o tabuleiro
 A classe `Program.cs` engloba todas as "instruções" do programa, renderiza
 o tabuleiro,
 
-A classe `Sheep.cs`
+A classe `Sheep.cs` engloba a movimentação das ovelhas pelo tabuleiro.
 
 A classe `Wolf.cs`engloba toda a movimentação do lobo e as suas condições de derrota.
 
