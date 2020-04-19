@@ -21,14 +21,14 @@ namespace WolfAndSheep
             Tabuleiro tabuleiroNovo = new Tabuleiro (8,8);
             Render(tabuleiroNovo);
 
-            Wolf player1 = new Wolf(OvelhaDir);
+            Wolf player1 = new Wolf();
+            player1.Start(OvelhaDir);
 
             while(!(player1.Loose() || player2.Loose()))
             {
                 player1.Move();
                 player2.Move();
             }
-            
         }
 
         /// <summary>
