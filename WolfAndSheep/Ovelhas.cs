@@ -17,8 +17,8 @@ namespace WolfAndSheep
         /// <summary>
         /// Construtor de ovelhas
         /// </summary>
-        /// <param name="linha">Pos X da ovelha</param>
-        /// <param name="coluna">Pos Y da ovelha</param>
+        /// <param name="linha">Pos Y da ovelha</param>
+        /// <param name="coluna">Pos X da ovelha</param>
         public Ovelhas(int linha = 0, int coluna = 0)
         {
           
@@ -83,10 +83,10 @@ namespace WolfAndSheep
             else if (escolha == 2 && (OvelhaDir == 3 || OvelhaDir == 4))
             {
                if (OvelhaX > 0 && OvelhaY < 7 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '1'
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '2' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '3' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '4' 
+                && tabuleironovo[OvelhaX - 1 , OvelhaY + 1 ] != '1'
+                && tabuleironovo[OvelhaX - 1 , OvelhaY + 1] != '2' 
+                && tabuleironovo[OvelhaX - 1 , OvelhaY + 1] != '3' 
+                && tabuleironovo[OvelhaX - 1 , OvelhaY + 1] != '4' 
                && tabuleironovo[OvelhaX - 1, OvelhaY + 1] != 'L')
                {
                     OvelhaX -= 1;
@@ -104,10 +104,10 @@ namespace WolfAndSheep
             else if (escolha == 3 && (OvelhaDir == 1 || OvelhaDir == 2))
             {
                 if (OvelhaX < 7 && OvelhaY > 0
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '1'
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '2' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '3' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '4'
+                && tabuleironovo[OvelhaX + 1 , OvelhaY - 1] != '1'
+                && tabuleironovo[OvelhaX + 1 , OvelhaY - 1] != '2' 
+                && tabuleironovo[OvelhaX + 1 , OvelhaY - 1] != '3' 
+                && tabuleironovo[OvelhaX + 1 , OvelhaY - 1] != '4'
                 && tabuleironovo[OvelhaX + 1 , OvelhaY - 1] != 'L')
                {
                     OvelhaX += 1;
@@ -126,10 +126,10 @@ namespace WolfAndSheep
             else if (escolha == 4 && (OvelhaDir == 1 || OvelhaDir == 4))
             {
                 if (OvelhaX < 7 && OvelhaY < 7 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '1'
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '2' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '3' 
-                && tabuleironovo[OvelhaX - 1 , OvelhaY - 1] != '4'
+                && tabuleironovo[OvelhaX + 1 , OvelhaY + 1] != '1'
+                && tabuleironovo[OvelhaX + 1 , OvelhaY + 1] != '2' 
+                && tabuleironovo[OvelhaX + 1 , OvelhaY + 1] != '3' 
+                && tabuleironovo[OvelhaX + 1 , OvelhaY + 1] != '4'
                 && tabuleironovo[OvelhaX + 1, OvelhaY + 1] != 'L')
                {
                     OvelhaX += 1;

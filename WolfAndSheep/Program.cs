@@ -44,10 +44,15 @@ namespace WolfAndSheep
                 Console.WriteLine("Que ovelha queres mexer?\n"
                     + "1 , 2 , 3 , 4");
 
+                
+
 
                 ///Espera por um numero de ovelha válido
                 while (!int.TryParse(Console.ReadLine(), out escolhaO) ||
                     escolhaO < 1 || escolhaO > 4) ;
+
+                Console.WriteLine(ovelhas[escolhaO-1].OvelhaX);
+                Console.WriteLine(ovelhas[escolhaO-1].OvelhaY);
 
                 ///Faz loop até uma ovelha ser movida com sucesso
                 while(check == false)
@@ -82,42 +87,69 @@ namespace WolfAndSheep
          int OvelhaDir){
             ///Cria o array de ovelhas
             Ovelhas[] ovelhas = new Ovelhas[4];
-
-            int x = OvelhaDir == 1 || OvelhaDir == 4 ? 0 :
-                tabuleiroNovo.Y - 1;
             
-            /// int para guardar o número da ovelha nova no array
+            int x;
+            int y;
             int i = 0;
-
-            /// Loop para a altura do tabuleiro
-            for (int y = 0 ; y < tabuleiroNovo.Y; y++)
+            if (OvelhaDir==1)
             {
-                ///Vê qual a direção das ovelhas (em coluna)
-                if(OvelhaDir == 1 || OvelhaDir == 3)
-                {
-                    ///Vê se é uma casa jogável para por a ovelha
+                x = 0;
+                for (y = 0 ; y < tabuleiroNovo.Y; y++)
+             {
+                  
                     if (tabuleiroNovo[x, y] == ' ')
                     {
-                        ///Cria a nova ovelha na cordenada x e y dada
+                       
                         ovelhas[i] = new Ovelhas(x, y);
 
                         i++;
                     }
-                }
-                /// Outra direção das ovelhas(em linha)
-                else {
+                
+             }
 
-                    ///Vê se é uma casa jogável para por a ovelha
-                    if (tabuleiroNovo[y, x] == ' ')
+            }else if (OvelhaDir==3){
+                x = 7;
+                for (y = 0 ; y < tabuleiroNovo.Y; y++)
+             {
+                    if (tabuleiroNovo[x, y] == ' ')
                     {
-                        ///Cria a nova ovelha na cordenada y e x dada
-                        ovelhas[i] = new Ovelhas(y, x);
+                       
+                        ovelhas[i] = new Ovelhas(x, y);
 
                         i++;
-
                     }
-                }
-            }
+                
+             }
+            }else if(OvelhaDir==2){
+                y = 7;
+                  for (x = 0 ; x < tabuleiroNovo.X; x++)
+             {
+                    if (tabuleiroNovo[x, y] == ' ')
+                    {
+                       
+                        ovelhas[i] = new Ovelhas(x, y);
+
+                        i++;
+                    }
+             }
+                
+             }else{
+                 y= 0;
+                      for (x = 0 ; x < tabuleiroNovo.X; x++)
+             {
+                    if (tabuleiroNovo[x, y] == ' ')
+                    {
+                       
+                        ovelhas[i] = new Ovelhas(x, y);
+
+                        i++;
+                    }
+             }
+             }
+            
+            
+            
+            
             
                 ///Atualiza o visualmente o tabuleiro com
                 ///o número de cada ovelha no tabuleiro
@@ -163,7 +195,9 @@ namespace WolfAndSheep
         }
         public void OvelhasPerdem(int OvelhaDir){
 
+
             if(OvelhaDir == 1){
+               
                 
                 
             }else if(OvelhaDir == 2){
