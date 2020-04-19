@@ -11,7 +11,7 @@ A aluna **Daniela Gameiro** fez a classe `MenuInicial.cs`, ajudou a fazer a
 classe `Tabuleiro.cs` e a estruturar a classe `Program.cs`.
 Também fez o documento `README.md` em *Markdown* e o respetivo fluxograma.
 
-O aluno **Francisco Costa** fez
+O aluno **Francisco Costa** fez a classe `Ovelhas.cs`, deu merge das classes e ajudou a estruturar `Program.cs`
 
 O aluno **João Borges** fez a classe `Wolf.cs`, deu merge das classes e ajudou a estruturar a classe `Program.cs`.
 
